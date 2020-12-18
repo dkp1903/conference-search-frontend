@@ -1,12 +1,15 @@
 import React, { useState } from "react";
+import { getQueriesForElement } from "@testing-library/react";
 
-const SearchBar = ({ getSearch }) => {
+const SearchBar = ({ getSearch, getFreeConf }) => {
   const [text, setText] = useState("");
 
+  const filterFree =() => {
+    getFreeConf()
+  }
   
   const onChange = (q) => {
     setText(q);
-    console.log(q);
     getSearch(q);
   };
 
@@ -23,10 +26,18 @@ const SearchBar = ({ getSearch }) => {
           autoFocus
         />
       </form>
+      {/* <form>
+        <input
+          label="free only"
+          type="checkbox"
+          className="form-control"
+          value={text}
+          onChange={e => filterFree()}
+          autoFocus
+        />
+      </form> */}
     </section>
-    <section className="search">
     
-  </section>
 
   );
 };

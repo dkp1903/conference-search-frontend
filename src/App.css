@@ -126,20 +126,21 @@ input[type="text"] {
 .confDate {
   color: #676767;
   margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #000;
+  border-radius: 20px;
 }
 
 .Paid {
-  background: #ff4d4d;
+  background: #000;
   color: #fff;
-  z-index: 1;
-  position: absolute;
+  align-self: flex-end;
 }
 
 .Free {
   color: #000;
-  z-index: 1;
-  position: absolute;
-  background: #33ff33;
+  
+  background: #000;
 }
 
 .btn {
