@@ -1,27 +1,15 @@
-<h1 align="center"><strong>konfHub-Frontend-Task</strong></h1>
+Front end for Konfhub task
 
-<p align="center"> made with  ❤️ <strong>React </strong></p>
+To run
 
-## Live Demo
+```
+clone the repo
 
-[![demo](https://img.shields.io/badge/demo-Hit_Me-orange)](https://konf-hub-frontend-task.vercel.app/)
+npm i
 
-## Framework used
+npm start
+```
 
-- [React](https://reactjs.org/) <code><img height="15" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
+Built using React
 
-## How to use?
-
-### `npm run`
-
-It will install all node pakages for you
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Deployed on : https://conference-searcher.netlify.app

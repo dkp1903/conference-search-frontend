@@ -17,7 +17,7 @@ const SearchBar = ({ getSearch }) => {
         <input
           type="text"
           className="form-control"
-          placeholder="Search Conference"
+          placeholder="Search Name/City"
           value={text}
           onChange={(e) => onChange(e.target.value)}
           autoFocus

@@ -2,8 +2,6 @@ import React from "react";
 
 const ConferenceCard = ({ data }) => {
   let imageURL = data.imageURL.replace('"', "").replace('"', "")
-    
-  
   return (
     <a href={data.confURl} className="card">
       <div style={{ width: "2em", height: "1em" }} className={data.entryType}>
