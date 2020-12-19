@@ -118,29 +118,30 @@ input[type="text"] {
   
 }
 
-
-
 .confData {
   padding: 10px;
 }
 .confDate {
-  color: #676767;
+  color: #fff;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   background-color: #000;
   border-radius: 20px;
 }
 
-.Paid {
+.confType {
   background: #000;
   color: #fff;
   align-self: flex-end;
+  border-radius: 20px;
+  margin-left: 40%;
+  padding: 0.5em;
 }
-
-.Free {
-  color: #000;
-  
-  background: #000;
+.confName {
+  color: #3a04ff;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .btn {
@@ -151,8 +152,8 @@ input[type="text"] {
   font-size: 16px;
   cursor: pointer;
   border-radius: 10%;
-  margin-top: 9px;
-  margin-left: 2.5rem;
+  margin-top: 8px;
+  margin-left: 30%;
 }
 
 .click {

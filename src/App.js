@@ -9,7 +9,7 @@ const App = () => {
   const [confData, setConfData] = useState([]);
   
   let [filteredConfData, setFilteredConfData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [search, setSearch] = useState([]);
   const [free, getFree] = useState(false)
   let freeConfData = [];
@@ -17,8 +17,10 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(url);
-      setConfData(result.data.paid.concat(result.data.free));
-      setFilteredConfData(result.data.paid.concat(result.data.free));
+      const paid = result.data.paid
+      const freeConf = result.data.free
+      setConfData(paid.concat(freeConf));
+      setFilteredConfData(paid.concat(freeConf));
       setIsLoading(false);
     };
     fetchData();
@@ -36,13 +38,8 @@ const App = () => {
   );
 
   freeConfData = confData.filter((conf) => {
-    if(free){
-      if(conf.entryType === 'Free')
-        return conf
-    }
-    console.log(conf)
-    console.log(free)
-
+    if(conf.entryType == 'Free')
+      return conf;
   })
 
   return (

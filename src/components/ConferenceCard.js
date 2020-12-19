@@ -8,14 +8,16 @@ const ConferenceCard = ({ data }) => {
       <img src={imageURL} alt="" />
       <div className="confData" >
         <button className="confDate">{data.confStartDate}</button>
-        <div style={{ width: "4em", height: "2em" }} className={data.entryType}>
+        <button className="confType">
         {data.entryType}
-      </div>
-        <div className="confName">{data.confName}</div>
-        
-        <button class="btn click">
-          <a href={data.confUrl}>View</a>
-        </button>
+      </button>
+      <div>
+          <div className="confName">{data.confName}</div>
+          
+          <button class="btn click">
+            <a href={data.confUrl}>View</a>
+          </button>
+        </div>
       </div>
     </a>
   );
