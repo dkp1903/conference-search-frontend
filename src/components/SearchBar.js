@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { getQueriesForElement } from "@testing-library/react";
 
-const SearchBar = ({ getSearch, getFreeConf }) => {
+const SearchBar = ({ getSearch}) => {
   const [text, setText] = useState("");
 
-  const filterFree =() => {
-    getFreeConf()
-  }
+  // const filterFree =() => {
+  //   getFreeConf()
+  // }
   
   const onChange = (q) => {
     setText(q);

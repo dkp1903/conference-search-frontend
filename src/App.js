@@ -45,7 +45,19 @@ const App = () => {
   return (
     <div className="container">
       <Header />
-      <SearchBar getSearch={(q) => setSearch(q)} getFreeConf={() => getFree(true)}/>
+      <SearchBar getSearch={(q) => setSearch(q)}/>
+      <div className="filter">
+        <form>
+          <label style={{margin: '10px'}}>Free only</label>
+          <input
+            label="free only"
+            type="checkbox"
+            className="form-control"
+            onChange={e => getFree(!free)}
+            autoFocus
+          />
+        </form>
+      </div>
       <section className="bg">
         <ConferenceTile
           isLoading={isLoading}
